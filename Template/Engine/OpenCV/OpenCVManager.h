@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable UIImage *)doGrabCut:(UIImage*)sourceImage foregroundRect:(CGRect)rect iterationCount:(int)iterationCount;
 
+- (nullable UIImage *)changeColor:(int)r g:(int)g b:(int)b;
+
 @end
 
 NS_ASSUME_NONNULL_END

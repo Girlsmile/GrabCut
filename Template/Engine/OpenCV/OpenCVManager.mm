@@ -19,6 +19,7 @@
 
 cv::Mat mask; // segmentation (4 possible values)
 cv::Mat bgModel,fgModel; // the models (internally used)
+cv::Mat sourceMat;
 
 //修正rgb通道
 -(cv::Mat) changeTORGB:(cv::Mat)cvMat {
@@ -198,7 +199,7 @@ cv::Mat bgModel,fgModel; // the models (internally used)
 
 -(UIImage*)doGrabCut:(UIImage*)sourceImage foregroundRect:(CGRect)rect iterationCount:(int)iterationCount {
     //将UIImage转换为Mat
-    cv::Mat sourceMat = [self cvMatFromUIImage:sourceImage];
+    sourceMat = [self cvMatFromUIImage:sourceImage];
 //    UIImageToMat(sourceImage, sourceMat);
     //RGBA > BGR
     //COLOR_BGRA2BGR
@@ -215,12 +216,25 @@ cv::Mat bgModel,fgModel; // the models (internally used)
     
     
     //从结果中提取前景（GC_PR_FGD）区域并二值化
+       
+    UIImage *resultImage = [self changeBackground: cv::Scalar(254,255,255)];
+    return resultImage;
+}
+
+-(UIImage *)changeColor:(int)r g:(int)g b:(int)b {
+    UIImage *image = [self changeBackground:cv::Scalar(r,g,b)];
+    return image;
+}
+
+
+- (UIImage *)changeBackground:(cv::Scalar)colorVector {
     cv::Mat1b fgMask;
     cv::compare(mask, cv::GC_PR_FGD, fgMask, cv::CMP_EQ);
     
     // Generate output image
     cv::Mat foreground(sourceMat.size(),CV_8UC3,
-                       cv::Scalar(255,255,255, 1));
+                       colorVector);
+    
     
     fgMask=fgMask&1;
     sourceMat.copyTo(foreground, fgMask);
@@ -228,39 +242,41 @@ cv::Mat bgModel,fgModel; // the models (internally used)
     UIImage *resultImage=[self UIImageFromCVMat:foreground];
     
     return resultImage;
+    
 }
 
-- (UIImage *)doGrabCutWithMask:(UIImage *)sourceImage maskImage:(UIImage *)maskImage iterationCount:(int) iterCount {
-    
-    mask.setTo(cv::GC_PR_BGD);
-    bgModel.setTo(0);
-    fgModel.setTo(0);
-    
-    cv::Mat img=[self cvMatFromUIImage:sourceImage];
-    cv::cvtColor(img , img , cv::COLOR_RGBA2RGB);
-    
-    cv::Rect rectangle(0, 0, sourceImage.size.width, sourceImage.size.height);
-//    cv::grabCut(img, mask, rectangle, bgModel, fgModel, iterCount, cv::GC_INIT_WITH_MASK);
-    
-    cv::Mat1b markers=[self cvMatMaskerFromUIImage:maskImage];
-//    cv::Rect rectangle(0,0,0,0);
-    cv::grabCut(img, markers, rectangle, bgModel, fgModel, iterCount, cv::GC_INIT_WITH_MASK);
-    
-    cv::Mat tempMask;
-    cv::compare(mask,cv::GC_PR_FGD,tempMask,cv::CMP_EQ);
-    // Generate output image
-    cv::Mat foreground(img.size(),CV_8UC3,
-                       cv::Scalar(255,255,255));
-    
-    tempMask=tempMask&1;
-    img.copyTo(foreground, tempMask);
-    
-    UIImage *resultImage = MatToUIImage(foreground);
-//    UIImage *resultImage=[self UIImageFromCVMat:foreground];
-    
-    
-    return resultImage;
-}
+
+//- (UIImage *)doGrabCutWithMask:(UIImage *)sourceImage maskImage:(UIImage *)maskImage iterationCount:(int) iterCount {
+//
+//    mask.setTo(cv::GC_PR_BGD);
+//    bgModel.setTo(0);
+//    fgModel.setTo(0);
+//
+//    cv::Mat img=[self cvMatFromUIImage:sourceImage];
+//    cv::cvtColor(img , img , cv::COLOR_RGBA2RGB);
+//
+//    cv::Rect rectangle(0, 0, sourceImage.size.width, sourceImage.size.height);
+////    cv::grabCut(img, mask, rectangle, bgModel, fgModel, iterCount, cv::GC_INIT_WITH_MASK);
+//
+//    cv::Mat1b markers=[self cvMatMaskerFromUIImage:maskImage];
+////    cv::Rect rectangle(0,0,0,0);
+//    cv::grabCut(img, markers, rectangle, bgModel, fgModel, iterCount, cv::GC_INIT_WITH_MASK);
+//
+//    cv::Mat tempMask;
+//    cv::compare(mask,cv::GC_PR_FGD,tempMask,cv::CMP_EQ);
+//    // Generate output image
+//    cv::Mat foreground(img.size(),CV_8UC3,
+//                       cv::Scalar(254,255,255));
+//
+//    tempMask=tempMask&1;
+//    img.copyTo(foreground, tempMask);
+//
+//    UIImage *resultImage = MatToUIImage(foreground);
+////    UIImage *resultImage=[self UIImageFromCVMat:foreground];
+//
+//
+//    return resultImage;
+//}
 
 
 @end
