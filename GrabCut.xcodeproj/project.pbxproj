@@ -19,16 +19,11 @@
 		02675BC0227EBCF50078363A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02675BBF227EBCF50078363A /* UIImage.swift */; };
 		02675BC9227EBE160078363A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02675BC8227EBE160078363A /* UIView.swift */; };
 		026F102C22DC7869008BF4AB /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 026F102B22DC7869008BF4AB /* QMUIConfigurationTemplate.m */; };
-		026F102F22DC787A008BF4AB /* StatisticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F102D22DC787A008BF4AB /* StatisticsEvent.swift */; };
-		026F103022DC787A008BF4AB /* StatisticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F102E22DC787A008BF4AB /* StatisticsManager.swift */; };
 		026F116822DC7B6C008BF4AB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F116622DC7B6C008BF4AB /* BaseNavigationController.swift */; };
 		026F116922DC7B6C008BF4AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F116722DC7B6C008BF4AB /* BaseViewController.swift */; };
 		026F11B522DC7CC8008BF4AB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F11B422DC7CC8008BF4AB /* Util.swift */; };
 		028557A322F26E3200D7426C /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028557A222F26E3200D7426C /* PreferenceManager.swift */; };
 		02C3F69923B98E9B0081A0E3 /* OpenCVManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 02C3F69823B98E9B0081A0E3 /* OpenCVManager.mm */; };
-		02C3F69B23B98FA70081A0E3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C3F69A23B98FA70081A0E3 /* opencv2.framework */; };
-		02EA432F2328D84600ACE002 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EA432E2328D84600ACE002 /* BannerView.swift */; };
-		02F72A7E239E4C9E004E9A30 /* Marketing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F72A7D239E4C9E004E9A30 /* Marketing.swift */; };
 		2E3E407B5807ADDD838EA4A3 /* Pods_GrabCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112B715154E9BBE63F9D1828 /* Pods_GrabCut.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,17 +44,12 @@
 		02675BC8227EBE160078363A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		026F102A22DC7869008BF4AB /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
 		026F102B22DC7869008BF4AB /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
-		026F102D22DC787A008BF4AB /* StatisticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsEvent.swift; sourceTree = "<group>"; };
-		026F102E22DC787A008BF4AB /* StatisticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsManager.swift; sourceTree = "<group>"; };
 		026F116622DC7B6C008BF4AB /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		026F116722DC7B6C008BF4AB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		026F11B422DC7CC8008BF4AB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		028557A222F26E3200D7426C /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		02C3F69723B98E9B0081A0E3 /* OpenCVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVManager.h; sourceTree = "<group>"; };
 		02C3F69823B98E9B0081A0E3 /* OpenCVManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVManager.mm; sourceTree = "<group>"; };
-		02C3F69A23B98FA70081A0E3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		02EA432E2328D84600ACE002 /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
-		02F72A7D239E4C9E004E9A30 /* Marketing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marketing.swift; sourceTree = "<group>"; };
 		112B715154E9BBE63F9D1828 /* Pods_GrabCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94837D7BE2C2F523BCCADCED /* Pods-GrabCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabCut.debug.xcconfig"; path = "Target Support Files/Pods-GrabCut/Pods-GrabCut.debug.xcconfig"; sourceTree = "<group>"; };
 		B7CD5F28DC8F81475E49621D /* Pods-GrabCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabCut.release.xcconfig"; path = "Target Support Files/Pods-GrabCut/Pods-GrabCut.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C3F69B23B98FA70081A0E3 /* opencv2.framework in Frameworks */,
 				2E3E407B5807ADDD838EA4A3 /* Pods_GrabCut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +108,6 @@
 				02675BB9227EBB0A0078363A /* Constant.swift */,
 				02675BB4227EBA1A0078363A /* Template-Bridging-Header.h */,
 				026F11B422DC7CC8008BF4AB /* Util.swift */,
-				02F72A7D239E4C9E004E9A30 /* Marketing.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -135,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				02675BC5227EBDE70078363A /* Cell */,
-				02EA432E2328D84600ACE002 /* BannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,8 +151,6 @@
 			children = (
 				02C3F69623B98E850081A0E3 /* OpenCV */,
 				026F102922DC7869008BF4AB /* QMUIConfigurationTemplate */,
-				026F102D22DC787A008BF4AB /* StatisticsEvent.swift */,
-				026F102E22DC787A008BF4AB /* StatisticsManager.swift */,
 				028557A222F26E3200D7426C /* PreferenceManager.swift */,
 			);
 			path = Engine;
@@ -221,7 +206,6 @@
 		7444B56A5380C0F0AC4A7323 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				02C3F69A23B98FA70081A0E3 /* opencv2.framework */,
 				112B715154E9BBE63F9D1828 /* Pods_GrabCut.framework */,
 			);
 			name = Frameworks;
@@ -269,7 +253,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = flow;
 				TargetAttributes = {
 					02675B97227EB7B80078363A = {
@@ -393,17 +377,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02675BC9227EBE160078363A /* UIView.swift in Sources */,
-				026F102F22DC787A008BF4AB /* StatisticsEvent.swift in Sources */,
-				026F103022DC787A008BF4AB /* StatisticsManager.swift in Sources */,
 				026F11B522DC7CC8008BF4AB /* Util.swift in Sources */,
 				02675B9E227EB7B80078363A /* ViewController.swift in Sources */,
 				02675BBC227EBB1C0078363A /* UIColor.swift in Sources */,
 				026F116922DC7B6C008BF4AB /* BaseViewController.swift in Sources */,
-				02EA432F2328D84600ACE002 /* BannerView.swift in Sources */,
 				02C3F69923B98E9B0081A0E3 /* OpenCVManager.mm in Sources */,
 				02675BBE227EBC3A0078363A /* String.swift in Sources */,
 				02675BC0227EBCF50078363A /* UIImage.swift in Sources */,
-				02F72A7E239E4C9E004E9A30 /* Marketing.swift in Sources */,
 				02078BF82391164500620960 /* UIImage+Asset.swift in Sources */,
 				026F116822DC7B6C008BF4AB /* BaseNavigationController.swift in Sources */,
 				028557A322F26E3200D7426C /* PreferenceManager.swift in Sources */,
@@ -461,6 +441,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -486,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,6 +503,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -541,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -558,20 +540,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RTZWA2CAC9;
+				DEVELOPMENT_TEAM = 7VCJ87V42T;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Template/Engine",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.flowever.Template;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flowever.Template1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Template/Global/Template-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -587,20 +570,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RTZWA2CAC9;
+				DEVELOPMENT_TEAM = 7VCJ87V42T;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Template/Engine",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.flowever.Template;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flowever.Template1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Template/Global/Template-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

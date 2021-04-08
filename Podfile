@@ -2,7 +2,6 @@ platform :ios, '10.0'
 
 inhibit_all_warnings!
 
-source 'http://git.flowever.net/component/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 install! 'cocoapods', generate_multiple_pod_projects: true
@@ -10,8 +9,7 @@ install! 'cocoapods', generate_multiple_pod_projects: true
 target 'GrabCut' do
   use_frameworks!
   
-  pod 'AdLib'
-  pod 'Toolkit', '~> 5.2.19'
+
   
   pod 'SnapKit', '4.2.0'
   
